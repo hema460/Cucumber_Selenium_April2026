@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-18T04:58:46 CDT" name="Default suite" finished-at="2026-04-18T04:59:28 CDT" duration-ms="42374">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@707194ba]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-18T04:58:46 CDT" name="Default test" finished-at="2026-04-18T04:59:28 CDT" duration-ms="42374">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@707194ba]" started-at="2026-04-18T04:58:46 CDT" name="setUpClass" finished-at="2026-04-18T04:58:47 CDT" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51841ac6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@707194ba]" started-at="2026-04-18T04:58:47 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T04:59:16 CDT" duration-ms="29006" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify login is successfull"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul/li[1]//button[normalize-space(.='HOME')]"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b6dafe3c676bc62bd58b0b7793aa7ba, findElement {value=//ul/li[1]//button[normalize-space(.='HOME')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\hemaj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54934}, goog:processID: 40232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54934/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b6dafe3c676bc62bd58b0b7793aa7ba]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul/li[1]//button[normalize-space(.='HOME')]"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b6dafe3c676bc62bd58b0b7793aa7ba, findElement {value=//ul/li[1]//button[normalize-space(.='HOME')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\hemaj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54934}, goog:processID: 40232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54934/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b6dafe3c676bc62bd58b0b7793aa7ba
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+at rahulshettyacademy.PageObjects.ProductPage.verifyLoginSuccessfull(ProductPage.java:41)
+at stepDefinition.PurchaseorderStepDef.verify_that_the_is_displayed_on_the_page(PurchaseorderStepDef.java:46)
+at ✽.verify that the "HOME" is displayed on the page.(file:///C:/Users/hemaj/eclipse-workspace/SSCucumberTestNGFrameWork/src/test/resources/features/Purchaseorder.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@707194ba]" started-at="2026-04-18T04:59:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-18T04:59:28 CDT" duration-ms="11893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@707194ba]" started-at="2026-04-18T04:59:28 CDT" name="tearDownClass" finished-at="2026-04-18T04:59:28 CDT" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
